@@ -19,6 +19,8 @@ for file_ in raw_files:
 	mask = cv2.inRange(hsv, lower_green, upper_green)
 	res = cv2.bitwise_and(img, img, mask=mask)
 	cv2.imwrite(filtered + '/filtered' + str(image_no) + '.png', res)
+	image_no += 1
+
 	# cv2.imshow('realimg', img)
 	# cv2.imshow('mask' , res)
 	# cv2.waitKey(0)
