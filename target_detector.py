@@ -2,7 +2,7 @@ import os
 import cv2
 import numpy as np
 
-path_to_raw_images = 'data/raw/'
+path_to_raw_images = 'data/resize/'
 path_to_processed_images = 'data/processed/'
 raw_image_filenames = os.listdir(path_to_raw_images)
 
